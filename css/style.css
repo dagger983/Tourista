@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+body {
+    margin: 0;
+    background-color: #210002;
+    font-family: Poppins;
+    font-size: 15px;
+    user-select: none;
+    
+    overflow-x: hidden; 
+}
+
+.banner {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: auto 100%;
+    background-position: center bottom;
+    transition: 0.1s;
+}
+
+.banner .bg-1 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532698/0_dy6e6d.png');
+}
+
+.banner .bg-2 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532699/1_c4oaoa.png');
+}
+
+.banner .bg-3 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532702/2_ekgk7w.png');
+}
+
+.banner .bg-4 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532704/3_tsuqy2.png');
+}
+
+.banner .bg-5 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532707/4_xr0prr.png');
+}
+
+.banner .bg-6 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532709/5_tdzbve.png');
+}
+
+.banner .bg-7 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532731/6_chrnhl.png');
+}
+
+.banner .bg-8 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532876/7_zfgfge.png');
+}
+
+.banner .bg-9 {
+    background-image: url('https://res.cloudinary.com/dvp17drdy/image/upload/v1694532877/8_ucjsjd.png');
+}
+
+.banner h1 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 11rem;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+
+}
+
+.intro {
+    min-height: 50vh;
+    color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.intro img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.intro p {
+    width: 700px;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+.animation-show {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.active .animation-show {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+.animation-show:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+.animation-show:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.animation-show:nth-child(4) {
+    transition-delay: 0.9s;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 5rem;
+
+    }
+
+    .library {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .library img {
+        height: 300px;
+    }
+}
+
+.para-font {
+    font-family: 'Poppins', sans-serif;
+    margin: 25px;
+}
+
+#logo-size {
+    height: 250px;
+    width: 250px;
+}
+
+body {
+    margin-top: 50px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #834703;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+.header button {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 50px;
+    flex-shrink: 0;
+    font-size: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-evenly;
+
+
+    align-items: center;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+    padding: 25px;
+}
+
+.link.active,
+.link:hover {
+    color: #EA2027;
+    background-color: #eee;
+}
+
+.links {
+    transform: translateX(-250px);
+    transition: 0.5s;
+}
+
+.content {
+    padding: 10px;
+}
+
+.open .links {
+    transform: translateX(0px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.open .nav-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.thalaipu {
+    color: #f5f6fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itsm {
+    background-color: #210002;
+    background-size: cover;
+    height: 100%;
+
+}
+
+.state-card {
+    text-align: center;
+    background-color: white;
+    width: 170px;
+    height: 170px;
+    border-radius: 9px;
+
+    margin: 10px;
+
+}
+
+
+.state-thalaipu {
+
+    font-size: 18px;
+
+}
+
+.stateico {
+    height: 120px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .dkt {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: center;
+
+
+    }
+
+    .dsp-prw {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .state-card {
+        text-align: center;
+        background-color: white;
+        width: 170px;
+        height: 170px;
+        border-radius: 9px;
+
+        margin: 10px;
+
+    }
+
+    .stateico {
+        height: 120px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .state-thalaipu {
+
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .mb-prw {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .state-card {
+        text-align: center;
+        background-color: white;
+        width: 170px;
+        height: 170px;
+        border-radius: 9px;
+
+        margin: 10px;
+
+    }
+
+    .stateico {
+        height: 120px;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .state-thalaipu {
+
+        font-size: 16px;
+    }
+}
